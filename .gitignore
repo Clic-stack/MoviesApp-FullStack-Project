@@ -1,0 +1,44 @@
+# 📦 Dependencias
+node_modules/
+movies-app-backend/node_modules/
+movies-app-frontend/node_modules/
+
+# 🔐 Variables de entorno
+.env
+movies-app-backend/.env
+movies-app-frontend/.env
+
+# 🧪 Archivos de pruebas y cobertura
+coverage/
+
+# 🐞 Logs y errores
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 🖥️ Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# ⚙️ Configuración local de VSCode (opcional)
+.vscode/
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 🏗️ Archivos de build
+dist/
+build/
+movies-app-backend/dist/
+movies-app-frontend/dist/
+movies-app-frontend/dist-ssr/
+
+# 🔧 Archivos locales
+*.local

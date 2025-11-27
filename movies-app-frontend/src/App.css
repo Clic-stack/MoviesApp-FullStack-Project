@@ -1,0 +1,515 @@
+/* Reset y tipografía */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #2ecc70a4 !important;
+  font-weight: bold !important;
+  text-align: justify !important;
+  margin: 0;
+  padding: 10px !important;
+  border-radius: 8px !important;
+}
+
+/* Banner educativo */
+.educational-purposes {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Contenedor principal */
+.custom-container {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Notificaciones */
+.notification-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 130px;
+  z-index: 99999;
+  text-align: center;
+}
+
+.custom-toast {
+  border: 3px solid #ffffff;
+  background: linear-gradient(135deg, #e50914, #ffcc00);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.toast-message {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Barra de navegación */
+.navbar {
+  background: linear-gradient(135deg, #121212, #1e1e1e) !important;
+  border-bottom: 2px solid #e50914;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffcc00 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #e50914 !important;
+}
+
+.nav-link {
+  color: #f5f5f5 !important;
+  font-weight: 500;
+  margin-right: 12px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00 !important;
+  transform: scale(1.05);
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #e50914 !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Modal */
+.modal-content,
+.custom-modal .modal-content {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border-radius: 12px;
+  border: 2px solid #e50914;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.modal-header,
+.custom-modal-header {
+  border-bottom: 1px solid #444;
+}
+
+.modal-title,
+.custom-modal-title {
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+.modal-footer,
+.custom-modal-footer {
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.custom-modal-body {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Inputs suaves */
+.form-control-soft {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #f5f5f5be;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+.form-control-soft::placeholder {
+  color: #f5f5f51f;
+}
+
+.form-control-soft:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.25);
+}
+
+/* Imagen vacía / placeholder */
+.empty-image {
+  width: 100%;
+  aspect-ratio: 2/3;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #444;
+  position: relative;
+  font-size: 25px;
+  border-radius: 8px;
+  color: #888;
+}
+
+.empty-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Input nombre película */
+.movie-name-input {
+  border: none;
+  font-size: 28px;
+  outline: none;
+  width: 100%;
+  font-weight: 600;
+  background: transparent;
+  color: #ffcc00;
+  border-bottom: 2px solid #e50914;
+  margin-bottom: 30px;
+}
+
+/* Botones reutilizables */
+.custom-button,
+.custom-button-delete,
+.custom-button-edit {
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.custom-button:hover {
+  background: #ffcc00 !important;
+  color: #121212 !important;
+  transform: scale(1.05);
+}
+
+.custom-button-sm {
+  border-radius: 24px;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.custom-button-sm:hover {
+  transform: scale(1.05);
+}
+
+.buttons-edit-delete {
+  gap: 8px;
+}
+
+.custom-button-delete {
+  background: #e50914 !important;
+  border: none;
+}
+
+.custom-button-delete:hover {
+  background: #ffcc00 !important;
+  color: #121212 !important;
+}
+
+.custom-button-edit {
+  background: #ffcc00 !important;
+  border: none;
+}
+
+.custom-button-edit:hover {
+  background: #e50914 !important;
+  color: #fff !important;
+}
+
+.custom-button-delete i,
+.custom-button-edit i {
+  font-size: 16px;
+}
+
+/* Botón de guardar flotante */
+.options-movie-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.options-movie-buttons .custom-button {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+/* Contenedor general del formulario */
+.movie-form-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+/* Panel del formulario (separado de form-card) */
+.movie-form-panel {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  width: 100%;
+}
+
+/* Títulos y encabezados */
+.section-title {
+  color: #ffcc00;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-header {
+  margin-bottom: 10px;
+}
+
+/* Selección de ítems (encapsulado) */
+.items-select {
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.items-select .form-card-container {
+  position: relative;
+  margin-right: 20px;
+}
+
+.items-select .delete-button {
+  background: #e50914;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 9;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.items-select .delete-button:hover {
+  transform: scale(1.1);
+  background: #ffcc00;
+  color: #121212;
+}
+
+.items-select .form-card {
+  width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.items-select .form-card:hover {
+  transform: translateY(-5px);
+}
+
+.items-select .card-img-custom {
+  height: 300px;
+  object-fit: cover;
+}
+
+.items-select .card-body-custom {
+  color: #f5f5f5;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Géneros */
+.genres-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.genres-list li,
+.genres-item {
+  margin: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #1e1e1e;
+  color: #ffcc00;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: background 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.genres-list li:hover,
+.genre-name:hover {
+  background: #e50914;
+  color: #fff;
+}
+
+.genre-name {
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 12px;
+  padding: 4px 10px;
+}
+
+/* Tarjetas generales */
+.movie-card,
+.director-card,
+.actor-card {
+  height: 100% ;
+  width: 100% ; 
+  min-height: 420px ; 
+  display: flex ;
+  flex-direction: column ;
+  justify-content: space-between ;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1e1e1e;
+  color: #11101007;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover,
+.director-card:hover,
+.actor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.7);
+}
+
+.movie-card-img,
+.director-card-img,
+.actor-card-img {
+  width: 100% ;
+  height: 250px ;
+  object-fit: cover;
+}
+
+.movie-card-body,
+.director-card-body,
+.actor-card-body {
+  flex-grow: 1 ;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: space-between ;
+  padding: 15px ;
+}
+
+.movie-card-title,
+.director-card-title,
+.actor-card-title {
+  min-height: 48px;
+  font-size: 25px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffcc00;
+
+}
+
+.movie-card-text,
+.director-card-info,
+.actor-card-info {
+  color: #1110107c;
+  line-height: 1.4;
+  margin-top: 10px ;
+  padding: 5px ;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  color: #ff00ff9a;
+}
+
+.btn-close {
+  filter: invert(24%) sepia(92%) saturate(7481%) hue-rotate(356deg) brightness(95%) contrast(119%);
+  opacity: 1;
+  transform: scale(1.3);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-close:hover {
+  filter: invert(84%) sepia(92%) saturate(7481%) hue-rotate(356deg) brightness(95%) contrast(119%);
+}
+
+/* Contenedor de paginación */
+.pagination {
+  margin-top: 30px;
+}
+
+/* Estilo base de los botones */
+.pagination .page-link {
+  background-color: #1e1e1e;   
+  color: #f5f5f5;              
+  border: 1px solid #333;      
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 8px 14px;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.pagination .page-link:hover {
+  background-color: #ffcc00;   
+  color: #121212;              
+  border-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+/* Página activa */
+.pagination .page-item.active .page-link {
+  background-color: #e50914;   
+  border-color: #e50914;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Botones deshabilitados */
+.pagination .page-item.disabled .page-link {
+  background-color: #1a1a1a;
+  color: #777;
+  border-color: #333;
+  cursor: not-allowed;
+}
+
+
+/* Responsivo: mejora espaciados en móvil */
+@media (max-width: 767.98px) {
+  .movie-form-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .movie-form-panel {
+    padding: 20px;
+  }
+  .options-movie-buttons .custom-button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+  .pagination .page-link {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
