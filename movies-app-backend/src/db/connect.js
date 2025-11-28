@@ -4,7 +4,13 @@ import { env } from "../env/index.js";
 const sequelize = new Sequelize(env.DATABASE_URL, {
     dialect: "postgres",
     logging: false,
-    timezone: "+00:00"
+    timezone: "+00:00",
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    }
 })
 
 export const connectDB = async () => {
