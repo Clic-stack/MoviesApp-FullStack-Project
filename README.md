@@ -7,7 +7,7 @@ This project demonstrates scalable API design, cinematic UI, reusable components
 ## 🌐 Deployment
 
 ## 🚀 Backend: Server online with Render
-🔗 
+🔗 https://moviesapp-lc0z.onrender.com
 
 ---
 
