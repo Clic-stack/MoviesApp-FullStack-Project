@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getActorsThunk } from './store/slices/actors.slice'
 import { getDirectorsThunk } from './store/slices/directors.slice'
 import { getMoviesThunk } from './store/slices/movies.slice'
-import MovieForm from './pages/MovieForm'
+import MovieForm from './pages/MovieForm' 
 
 function App() {
 
