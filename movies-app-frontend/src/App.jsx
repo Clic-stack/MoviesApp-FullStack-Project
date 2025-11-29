@@ -11,6 +11,8 @@ import { getDirectorsThunk } from './store/slices/directors.slice'
 import { getMoviesThunk } from './store/slices/movies.slice'
 import MovieForm from './pages/MovieForm'  
 
+const baseUrl = import.meta.env.VITE_API_URL
+
 function App() {
 
   const dispatch = useDispatch();
@@ -21,7 +23,7 @@ function App() {
     dispatch(getActorsThunk());
     dispatch(getDirectorsThunk());
     dispatch(getMoviesThunk());
-  }, [])
+  }, [baseUrl])
 
   return (
     <HashRouter>
