@@ -12,12 +12,12 @@ This project demonstrates scalable API design, cinematic UI, reusable components
 ---
 
 ## 📄 MoviesCRUD: Documentation online with Postman
-🔗 
+🔗 https://documenter.getpostman.com/view/48309056/2sB3dLUX82
 
 ---
 
 ## 🎬🌐 FullStack Project: MoviesApp online with Netlify
-🔗 
+🔗 https://galerymovies.netlify.app
 
 ---
 
@@ -262,7 +262,7 @@ Este proyecto demuestra el diseño de una API escalable, interfaz cinematográfi
 ---
 
 ## 🎬🌐 FullStack Project: Aplicación de películas en línea desplegada con Netlify
-🔗 
+🔗 https://galerymovies.netlify.app
 
 ---
 
