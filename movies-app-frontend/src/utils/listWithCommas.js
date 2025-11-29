@@ -1,5 +1,3 @@
-import React from 'react';
-
 const listWithCommas = (elements, propertyStractor) => {
 
     if(elements.length === 1) 

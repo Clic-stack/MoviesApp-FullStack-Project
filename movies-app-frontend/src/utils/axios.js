@@ -1,9 +1,3 @@
-/*import axios from "axios";
-
-export default axios.create({
-    baseURL: import.meta.env.VITE_API_URL
-})*/
-
 import axios from "axios";
 
 // Usa la variable de entorno si existe, o el localhost como fallback
