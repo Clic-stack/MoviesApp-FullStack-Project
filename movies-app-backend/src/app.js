@@ -8,15 +8,17 @@ import { env } from "./env/index.js";
 
 const app = express()
 
-const allowedOrigins = process.env.CORS_ORIGIN?.split(",") || ["http://localhost:5173"];
+//const allowedOrigins = process.env.CORS_ORIGIN?.split(",") || ["http://localhost:5173"];
 
 app.set('port', env.PORT || 3000)
 
-app.use(cors({
+app.use(cors())
+
+/*app.use(cors({
   origin: allowedOrigins,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
-}));
+}));*/
 
 app.use(helmet())
 app.use(morgan('dev'))
