@@ -8,6 +8,8 @@ import { env } from "./env/index.js";
 
 const app = express()
 
+const allowedOrigins = process.env.CORS_ORIGIN?.split(",") || [];
+
 app.set('port', env.PORT || 3000)
 
 app.use(cors());
