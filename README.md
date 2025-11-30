@@ -1,4 +1,4 @@
-## ## 🎬 MoviesApp Fullstack Project
+## 🎬 MoviesApp Fullstack Project
 
 A professional fullstack application built with **React, Redux, Express, Sequelize, and PostgreSQL.**
 This project demonstrates scalable API design, cinematic UI, reusable components, and deployment, ready architecture ideal for showcasing fullstack skills.
@@ -40,7 +40,7 @@ This project was designed to:
 - **Fullstack Development:** integrating frontend (React + Redux + Vite) with backend (Express + Sequelize + PostgreSQL).  
 - **API Design & RESTful Practices:** building CRUD endpoints and managing entity relationships.  
 - **Database Modeling:** using Sequelize ORM to define models and relationships in PostgreSQL.
-- **Security & Best Practices:** configuring CORS, Helmet, and handling environment variables.
+- **Security & Best Practices:** configuring CORS (for educational and portfolio purposes, CORS is open to all origins. This configuration allows public access from any frontend during development and testing.), Helmet, and handling environment variables.
 - **Deployment Skills:** deploying backend on Render and frontend on Vercel/Netlify.
 - **Version Control & Collaboration:** GitHub usage with `.gitignore`, `.env.example`, and bilingual documentation.
 - **UI/UX Design:** building a cinematic interface with React-Bootstrap and Bootswatch.
@@ -252,12 +252,12 @@ Este proyecto demuestra el diseño de una API escalable, interfaz cinematográfi
 ## 🌐 Despliegue
 
 ## 🚀 Backend: Servidor en línea desplegado con Render
-🔗 
+🔗 https://moviesapp-lc0z.onrender.com
 
 ---
 
 ## 📄 MoviesCRUD: Documentación en línea desplegada con Postman
-🔗 
+🔗 https://documenter.getpostman.com/view/48309056/2sB3dLUX82
 
 ---
 
@@ -284,7 +284,7 @@ Este proyecto fue diseñado para:
 - **Desarrollo Fullstack:** Integración de frontend (React + Redux + Vite) con backend (Express + Sequelize + PostgreSQL). 
 - **Diseño de APIs REST:** Construcción de endpoints CRUD y manejo de relaciones entre entidades.
 - **Modelado de Bases de Datos:** Uso de Sequelize ORM para definir modelos y relaciones en PostgreSQL.
-- **Seguridad y Buenas Prácticas:** Configuración de CORS, Helmet y manejo de variables de entorno.
+- **Seguridad y Buenas Prácticas:** Configuración de CORS (por motivos educativos y de portafolio CORS está abierto a todos los orígenes. Esta configuración permite el acceso público desde cualquier frontend durante el desarrollo y pruebas), Helmet y manejo de variables de entorno.
 - **Despliegue de Proyectos:** Despliegue de proyectos backend en Render y frontend en Netlify.
 - **Control de Versiones y Colaboración:** Uso de GitHub con `.gitignore`, `.env.example` y documentación bilingüe.
 - **Diseño UX/UI:** Interfaz cinematográfica con React-Bootstrap y Bootswatch.
@@ -469,7 +469,7 @@ npm install
 ```bash
 PORT=4000 # -> Cambia este valor por el del servidor que estes implementando
 DATABASE_URL=postgres://user:password@localhost:5432/movies
-CORS_ORIGIN=http://localhost:5173 # -> URL del frontend (deja el valor vacio si no aplica)
+#CORS_ORIGIN=http://localhost:5173 # -> URL del frontend (deja el valor vacio si no aplica)
 ```
 
 5. Corre el servidor en modo desarrollo:
